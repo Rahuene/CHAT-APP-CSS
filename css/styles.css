@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(270, 20%, 96%);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 85rem;
+  padding: 6.5rem 3rem;
+  display: flex;
+  column-gap: 12.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/********** PHONE SCREEN *********/
+
+.phone-screen-container {
+  width: 25rem;
+  border: solid hsl(0, 0%, 100%) 1rem;
+  border-radius: 3rem;
+  box-shadow: 0 1rem 1rem hsla(0, 0%, 0%, 0.1);
+}
+
+.phone-background {
+  height: 100%;
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.avatar-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid 1.5px hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.dog-photos img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.top-menu {
+  position: relative;
+}
+.white-space {
+  width: 13rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0 0 1.25rem 1.25rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* SENDER CONTAINER */
+.sender-container {
+  background: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  display: flex;
+  justify-content: start;
+  column-gap: 0.5rem;
+  align-items: center;
+  height: 6.5rem;
+  border-radius: 0.5rem;
+  padding: 3rem 1rem 1rem 1rem;
+}
+.left-arrow {
+  color: #fff;
+}
+.dots {
+  justify-self: end;
+  color: #fff;
+  margin-left: auto;
+}
+.sender-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+.sender-name {
+  color: hsl(270, 20%, 96%);
+  font-weight: 500;
+}
+.sender-available {
+  color: hsl(276, 100%, 81%);
+  font-size: 0.7rem;
+}
+
+/* SENDER CONTAINER END*/
+
+/* MESSAGES CONTAINER*/
+.messages {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.message-left:nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+.dog-photos {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: end;
+  margin-bottom: 0.5rem;
+}
+.dog-photos img {
+  display: flex;
+  border-radius: 1rem;
+}
+.message-left,
+.message-right {
+  padding: 0.5rem;
+  max-width: 50%;
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
+.message-left {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  color: hsl(276, 55%, 52%);
+  background-color: rgba(146, 65, 200, 0.1);
+  border-radius: 0.7rem 0.7rem 0.7rem 0.3rem;
+}
+
+.message-right {
+  margin: 0.5rem 0 0.5rem auto;
+  color: hsl(271, 15%, 43%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.7rem 0.7rem 0.3rem 0.7rem;
+  box-shadow: 0 0.3rem 0.5rem hsla(0, 0%, 0%, 0.05);
+}
+
+.messages p:nth-child(5) {
+  margin-bottom: 1rem;
+}
+
+.prices {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem 0.8rem 0.5rem;
+  width: 70%;
+  color: hsla(270, 20%, 96%, 0.7);
+  background-color: rgba(146, 65, 200, 0.1);
+  font-size: 0.7rem;
+  line-height: 1.3;
+  border-radius: 0.7rem 0.7rem 0.7rem 0.3rem;
+}
+
+.radio-button {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1.5px solid hsl(289, 100%, 72%);
+  border-radius: 50%;
+}
+
+.price {
+  margin-left: auto;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(270, 20%, 96%);
+}
+
+/* MESSAGES CONTAINER END*/
+
+/* TYPE CONTAINER*/
+
+.type-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0.5rem 1rem 1rem 1rem;
+  border-radius: 1.75rem;
+}
+
+.type-message {
+  color: hsl(206, 6%, 79%);
+  margin-left: 2rem;
+  font-size: 0.8rem;
+}
+
+.type-arrow {
+  color: white;
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 50%;
+  height: 1.75rem;
+  width: 1.75rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.main-text {
+  max-width: 44rem;
+}
+/* TYPE CONTAINER END*/
+
+/********** PHONE SCREEN END*********/
+
+.main-heading {
+  font-size: 3.6rem;
+  color: hsl(271, 36%, 24%);
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.main-text {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: hsl(270, 7%, 64%);
+}
+
+.left-decor {
+  position: absolute;
+  height: 75rem;
+  width: 53rem;
+  background: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  border-radius: 0 0 30rem 30rem;
+  z-index: -1;
+  top: 0rem;
+  left: -44.5rem;
+}
+
+.right-decor {
+  position: absolute;
+  height: 75rem;
+  width: 53rem;
+  background-color: hsla(206, 7%, 79%, 0.1);
+  border-radius: 30rem 30rem 0 0;
+  z-index: -1;
+  bottom: 0rem;
+  right: -45rem;
+}
+
+@media (max-width: 53em) {
+  html {
+    font-size: 50%;
+  }
+
+  .wrapper {
+    height: 100%;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+  }
+
+  .main-heading {
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+}
